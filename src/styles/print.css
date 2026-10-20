@@ -1,0 +1,33 @@
+@media print {
+  .header,
+  footer,
+  .closing-cta,
+  .button,
+  .message-dialog {
+    display: none;
+  }
+  .section {
+    padding: 30px;
+  }
+  .page-hero {
+    min-height: 0;
+    padding: 25px;
+  }
+  .process-intro {
+    position: static;
+  }
+}
+
+.button:disabled {
+  cursor: default;
+  background: #e0e7ef;
+  color: #526170;
+  border-color: #bfc9d4;
+}
+.button:disabled:hover {
+  background: #e0e7ef;
+  border-color: #bfc9d4;
+}
+.coming-button {
+  font-size: 12px;
+}

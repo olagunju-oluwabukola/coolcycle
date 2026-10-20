@@ -1,0 +1,65 @@
+/* Header and footer align to the same centred content frame as sections. */
+:root {
+  --content-inset: max(var(--gutter), calc((100% - 1800px) / 2 + var(--gutter)));
+}
+.header {
+  padding-left: var(--content-inset);
+  padding-right: var(--content-inset);
+}
+footer {
+  padding-left: var(--content-inset);
+  padding-right: var(--content-inset);
+}
+
+/* Quiet service labels and compact native FAQ disclosure. */
+.service-index {
+  background: white;
+}
+.faq-section details {
+  border-bottom: 1px solid var(--blue-dark);
+}
+.faq-section details:first-child {
+  border-top: 1px solid var(--blue-dark);
+}
+.faq-section summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 30px 1fr 24px;
+  gap: 20px;
+  align-items: center;
+  padding: 28px 40px;
+}
+.faq-section summary::-webkit-details-marker {
+  display: none;
+}
+.faq-section summary h3 {
+  font-size: clamp(23px, 2.3vw, 30px);
+  line-height: 1.15;
+}
+.faq-section summary > .icon {
+  transition: transform 0.25s;
+}
+.faq-section details[open] summary > .icon {
+  transform: rotate(180deg);
+}
+.faq-section summary:focus-visible {
+  outline: 3px solid var(--blue-mid);
+  outline-offset: -5px;
+  border-radius: 4px;
+}
+.faq-answer {
+  padding: 0 40px 30px 90px;
+}
+.faq-answer p {
+  font-size: 16px;
+  margin: 0;
+  line-height: 1.5;
+}
+.faq-answer .fine {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.faq-answer .text-link {
+  margin-top: 20px;
+}

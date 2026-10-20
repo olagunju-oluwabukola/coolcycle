@@ -1,0 +1,78 @@
+@media (min-width: 1001px) and (prefers-reduced-motion: no-preference) {
+  .roadmap-row:focus-visible {
+    height: var(--roadmap-height) !important;
+    min-height: 260px;
+  }
+  .roadmap-scroll {
+    overflow-anchor: none;
+  }
+  .scrolling-partners {
+    overflow-anchor: none;
+  }
+}
+/* A quiet frost vignette grows at the photo edges and melts on exit. */
+.photo-frost {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.75s ease-out;
+  box-shadow:
+    inset 0 0 24px 5px #e6f5ff80,
+    inset 0 0 4px 1px #fff9;
+  background: radial-gradient(ellipse at center, transparent 48%, #d7edff26 65%, #eef9ffb3 100%);
+  backdrop-filter: blur(0.65px);
+  mask-image: radial-gradient(ellipse at center, transparent 38%, #0008 70%, #000 100%);
+}
+.photo-frost::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.42;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.16' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.7' filter='url(%23f)'/%3E%3C/svg%3E");
+  mix-blend-mode: screen;
+}
+.photo-frost::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-conic-gradient(
+      from 12deg at 0 0,
+      transparent 0deg 7deg,
+      #f1faff38 7.2deg 7.6deg,
+      transparent 8deg 19deg
+    ),
+    repeating-conic-gradient(
+      from 36deg at 100% 100%,
+      transparent 0deg 11deg,
+      #ffffff29 11.2deg 11.5deg,
+      transparent 12deg 27deg
+    );
+  opacity: 0.45;
+}
+.photo-frost.is-frozen {
+  opacity: 1;
+  transition: opacity 1.1s ease-in;
+}
+.frost-photo {
+  transition:
+    filter 1.1s ease,
+    transform 0.85s ease;
+}
+.frost-photo.is-frozen {
+  filter: saturate(0.85) brightness(1.04);
+}
+@media (prefers-reduced-motion: reduce), (hover: none) {
+  .photo-frost {
+    display: none;
+  }
+  .frost-photo {
+    transition: none;
+  }
+  .roadmap-row:hover .roadmap-image > img,
+  .roadmap-row:focus-visible .roadmap-image > img {
+    transform: none;
+  }
+}

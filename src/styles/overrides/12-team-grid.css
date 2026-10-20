@@ -1,0 +1,87 @@
+/* Figma 29:1582 — four editorial portrait cards, with supplied biographies retained. */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+.team-grid article.founder-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+  padding: 45px 0 65px;
+  min-width: 0;
+}
+.team-grid .photo {
+  margin: 0;
+}
+.team-grid .photo > img {
+  height: 394px;
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.team-grid .founder-copy h3 {
+  font-size: clamp(30px, 3.61vw, 65px);
+  line-height: 1.13;
+  letter-spacing: -0.04em;
+  margin-top: 28px;
+  overflow-wrap: anywhere;
+}
+.team-grid .founder-copy p {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-top: 20px;
+  max-width: 500px;
+}
+.credits-section .credit-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  min-height: 300px;
+}
+.credits-section .credit-grid article {
+  min-height: 300px;
+}
+.credits-section .credit-grid article:nth-child(3) {
+  grid-column: auto;
+}
+@media (max-width: 1100px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .team-grid .founder-copy h3 {
+    font-size: 40px;
+  }
+  .team-grid .photo > img {
+    height: 394px;
+  }
+}
+@media (max-width: 650px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .team-grid article.founder-profile {
+    padding: 30px 0 45px;
+    gap: 24px;
+  }
+  .team-grid .photo > img {
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+  .team-grid .founder-copy h3 {
+    margin-top: 12px;
+    font-size: 38px;
+  }
+  .credits-section .credit-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    min-height: 0;
+  }
+  .credits-section .credit-grid article {
+    min-height: 0;
+  }
+}

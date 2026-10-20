@@ -1,0 +1,83 @@
+.partner-types {
+  border-top: 1px solid var(--ink);
+  background: #e3edfc;
+}
+.partner-type-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  margin-bottom: 50px;
+}
+.partner-type-grid article {
+  border-top: 1px solid var(--blue-dark);
+  padding-top: 20px;
+}
+.partner-type-grid h3 {
+  margin: 25px 0;
+  font-size: 28px;
+  min-height: 65px;
+}
+.partner-type-grid p {
+  font-size: 16px;
+  max-width: 330px;
+}
+.contact-routes {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact-route-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+}
+.contact-route-grid article {
+  border-top: 1px solid var(--ink);
+  padding-top: 25px;
+}
+.contact-route-grid h3 {
+  font-size: 26px;
+  min-height: 60px;
+}
+.contact-route-grid p {
+  font-size: 14px;
+  margin: 20px 0;
+  min-height: 63px;
+  overflow-wrap: anywhere;
+}
+.contact-route-grid .button {
+  padding: 12px 15px;
+  min-height: 46px;
+}
+.partner-challenges {
+  background: #e3edfc;
+}
+.challenge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 45px 0;
+}
+.challenge-grid h3 {
+  padding: 25px 0;
+  border-top: 1px solid var(--blue-dark);
+}
+.partner-challenges > p {
+  max-width: 700px;
+}
+.pathway ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 0;
+  margin: 0;
+}
+.pathway li {
+  border-top: 1px solid var(--ink);
+  padding-top: 20px;
+}
+.pathway h3 {
+  font-size: 28px;
+  min-height: 65px;
+  margin: 30px 0 20px;
+}

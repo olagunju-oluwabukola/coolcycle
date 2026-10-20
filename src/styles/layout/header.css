@@ -1,0 +1,73 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 22px 28px;
+  background: rgba(244, 248, 250, 0.98);
+  border-bottom: 1px solid var(--rule);
+  transition:
+    background 0.25s,
+    color 0.25s;
+}
+.header.over-photo {
+  background: transparent;
+  border: 0;
+  color: white;
+}
+.brand {
+  width: 146px;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.brand img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.header nav {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+.header nav a {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1.1;
+  background: white;
+  padding: 12px 11px;
+  color: var(--ink);
+  white-space: nowrap;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+}
+.header nav a:hover,
+.header nav a.active {
+  background: var(--ink);
+  color: white;
+}
+.nav-action {
+  min-height: 35px;
+  padding: 10px 13px;
+  font-size: 10px;
+  gap: 14px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+.nav-action .icon {
+  height: 16px;
+  width: 16px;
+}
+.menu-toggle {
+  display: none;
+}

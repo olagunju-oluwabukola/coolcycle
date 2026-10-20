@@ -1,0 +1,147 @@
+.label {
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 1.3;
+  letter-spacing: 0.035em;
+  font-weight: 500;
+}
+.label > span {
+  margin-right: 8px;
+}
+.fine {
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.section {
+  padding: 100px var(--gutter);
+  max-width: 1800px;
+  margin: auto;
+}
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 60px;
+  margin-bottom: 54px;
+}
+.section-head .label {
+  margin-bottom: 26px;
+}
+.section-head h2 {
+  max-width: 850px;
+}
+.section-head > p {
+  max-width: 360px;
+  font-size: 17px;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  width: max-content;
+  max-width: 100%;
+  transition: gap 0.25s;
+}
+.text-link:hover {
+  gap: 36px;
+}
+.text-link .icon {
+  width: 18px;
+  height: 18px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: var(--blue-dark);
+  color: white;
+  border: 1px solid var(--blue-dark);
+  padding: 16px 21px;
+  min-height: 54px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.3;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  white-space: normal;
+}
+.button > .icon {
+  filter: invert(1);
+  width: 21px;
+  height: 21px;
+}
+.button:hover {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.button.outline {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.button.outline > .icon {
+  filter: none;
+}
+.button.outline:hover {
+  background: var(--blue);
+  color: var(--ink);
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.copy {
+  display: grid;
+  gap: 25px;
+}
+.copy p {
+  font-size: 18px;
+  line-height: 1.48;
+}
+.photo {
+  position: relative;
+  min-width: 0;
+}
+.photo > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo figcaption {
+  padding-top: 10px;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+}
+.status {
+  display: inline-block;
+  border: 1px solid var(--rule);
+  font-size: 10px;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  line-height: 1.3;
+  padding: 4px 7px;
+  width: max-content;
+  max-width: 100%;
+}
+.status.available {
+  border-color: var(--green-dark);
+  color: var(--green-dark);
+}
+.status.soon {
+  border-color: var(--muted);
+  color: var(--muted);
+}

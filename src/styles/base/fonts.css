@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Inter;
+  src: url('/assets/inter-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url('/assets/inter-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Inter;
+  src: url('/assets/inter-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}

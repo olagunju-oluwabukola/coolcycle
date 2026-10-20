@@ -1,0 +1,79 @@
+.process-section {
+  background: #e8edf2;
+  border-top: 1px solid var(--blue-dark);
+  border-bottom: 1px solid var(--blue-dark);
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 95px;
+  color: var(--blue-dark);
+}
+.process-intro {
+  align-self: start;
+  position: sticky;
+  top: 130px;
+}
+.process-intro .label {
+  margin-bottom: 35px;
+}
+.process-intro h2 {
+  font-size: clamp(38px, 4.7vw, 72px);
+  max-width: 630px;
+}
+.process-intro p {
+  font-size: 16px;
+  max-width: 360px;
+  margin-top: 30px;
+}
+.process-intro .button {
+  margin-top: 35px;
+}
+.process-cards {
+  display: grid;
+  gap: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 1px solid var(--blue-dark);
+}
+.process-card {
+  margin-left: 45px;
+  margin-right: 0;
+  background: white;
+  padding: 25px 28px;
+  transform: rotate(-2deg);
+  transition: transform 0.9s;
+  position: relative;
+  min-height: 210px;
+}
+.process-card:nth-child(even) {
+  transform: rotate(2deg);
+}
+.process-card.in-view {
+  transform: rotate(0deg);
+}
+.process-card > div {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--blue-dark);
+  padding-bottom: 19px;
+}
+.process-card h3 {
+  font-size: 26px;
+  max-width: 370px;
+  line-height: 1.12;
+}
+.process-number {
+  font-size: 24px;
+}
+.process-card > .icon {
+  width: 30px;
+  height: 30px;
+  margin-top: 24px;
+}
+.process-card p {
+  margin-top: 16px;
+  max-width: 380px;
+  font-size: 14px;
+  line-height: 1.45;
+}

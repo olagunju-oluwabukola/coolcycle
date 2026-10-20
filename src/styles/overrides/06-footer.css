@@ -1,0 +1,121 @@
+/* Structure-inspired footer: open columns above a large wordmark. */
+footer {
+  background: var(--paper);
+  color: var(--ink);
+  border-top: 1px solid var(--rule);
+  padding-top: 65px;
+}
+.footer-top {
+  grid-template-columns: 0.8fr 1.6fr;
+  gap: 80px;
+  padding-bottom: 60px;
+}
+.footer-intro .label {
+  max-width: 230px;
+  line-height: 1.5;
+}
+.footer-top .footer-intro p {
+  color: var(--ink);
+  margin-top: 30px;
+  max-width: 280px;
+  font-size: 15px;
+}
+.footer-links {
+  grid-template-columns: 0.85fr 1fr 1.4fr;
+  gap: 35px;
+  padding: 0;
+  font-size: 14px;
+}
+.footer-links .label {
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.footer-links > div {
+  font-size: 14px;
+  gap: 10px;
+}
+.footer-button {
+  color: var(--ink);
+  font-size: 14px;
+}
+.footer-wordmark {
+  padding: 40px 0 35px;
+  border-top: 1px solid var(--rule);
+}
+.footer-wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.footer-bottom {
+  color: var(--muted);
+  border-color: var(--rule);
+}
+footer .icon {
+  filter: none;
+}
+@media (max-width: 900px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .footer-top .footer-intro p {
+    max-width: 500px;
+  }
+  .footer-links {
+    gap: 25px;
+  }
+  .partner-logo-pair {
+    gap: 15px;
+  }
+  .partner-logo-pair img {
+    max-width: none;
+  }
+}
+@media (max-width: 650px) {
+  .vision-mission h2 {
+    font-size: 46px;
+  }
+  .vision-mission h3 {
+    font-size: 36px;
+  }
+  .target-group {
+    padding: 25px;
+  }
+  .target-group .metric-grid strong {
+    font-size: 49px;
+  }
+  .partner-logo-pair {
+    gap: 22px;
+  }
+  .footer-links {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 25px;
+  }
+  .footer-links > div:last-child {
+    grid-column: 1/-1;
+  }
+  .footer-wordmark {
+    padding: 30px 0;
+  }
+  .footer-bottom {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .credit-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .credit-grid article:nth-child(3) {
+    grid-column: 1 / -1;
+  }
+}
+
+.footer-wordmark img {
+  opacity: 0.2;
+}
+.pricing .button {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+}

@@ -1,0 +1,33 @@
+.reasons-section {
+  border-top: 1px solid var(--rule);
+}
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 26px;
+}
+.reason-grid article {
+  border-top: 1px solid var(--ink);
+  padding-top: 18px;
+}
+.reason-grid article > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.reason-grid h3 {
+  font-size: 24px;
+  margin-top: 36px;
+  min-height: 54px;
+}
+.reason-grid p {
+  font-size: 14px;
+  margin-top: 18px;
+  max-width: 220px;
+}
+.support-line {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+}

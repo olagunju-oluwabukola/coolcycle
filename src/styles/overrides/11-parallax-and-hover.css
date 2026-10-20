@@ -1,0 +1,112 @@
+/* Brief scroll dwell with a softly trailing image; native page scrolling stays direct. */
+.container-stage {
+  padding: 0;
+  overflow: visible;
+}
+.container-parallax-sticky {
+  padding: 70px 30%;
+  position: relative;
+}
+.container-parallax-visual {
+  position: relative;
+}
+.container-parallax-visual > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+.container-parallax-sticky > .container-kicker {
+  z-index: 3;
+}
+@media (min-width: 701px) and (prefers-reduced-motion: no-preference) {
+  .container-stage {
+    height: 190svh;
+    overflow-anchor: none;
+  }
+  .container-parallax-sticky {
+    position: sticky;
+    top: 82px;
+    height: calc(100svh - 82px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .container-parallax-visual {
+    width: 100%;
+    flex-shrink: 0;
+    transform: translateY(var(--container-drift, 110px)) scale(var(--container-scale, 0.9));
+    will-change: transform;
+  }
+}
+@media (max-width: 700px) {
+  .container-parallax-sticky {
+    padding: 70px 20px 40px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .container-stage {
+    height: auto;
+  }
+  .container-parallax-sticky {
+    position: relative;
+    height: auto;
+  }
+  .container-parallax-visual {
+    transform: none;
+  }
+}
+@media (min-width: 701px) and (prefers-reduced-motion: no-preference) {
+  .container-parallax-sticky {
+    padding: 70px var(--gutter);
+  }
+  .container-parallax-visual {
+    max-width: 1100px;
+  }
+  .container-parallax-visual > img {
+    max-height: calc(100svh - 220px);
+    object-fit: contain;
+  }
+}
+.hero-service-strip > a {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+.hero-service-strip > a:hover,
+.hero-service-strip > a:focus-visible {
+  background: #234b91;
+  color: #fff;
+  border-color: #234b91;
+}
+.hero-service-strip > a:hover .icon,
+.hero-service-strip > a:focus-visible .icon {
+  filter: brightness(0) invert(1);
+}
+.hero-service-strip > a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+.footer-links .label {
+  margin-bottom: 4px;
+}
+.hero-bottom {
+  align-items: start;
+}
+.hero-service-strip > a:hover,
+.hero-service-strip > a:focus-visible {
+  background: #0c1d2e;
+  border-color: #0c1d2e;
+  color: white;
+}
+.button:not(:disabled):hover {
+  background: #0c1d2e;
+  border-color: #0c1d2e;
+  color: white;
+}
+.button:not(:disabled):hover .icon {
+  filter: brightness(0) invert(1);
+}

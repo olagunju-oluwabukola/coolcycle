@@ -1,0 +1,56 @@
+/* Exact Figma section refinements, adapted to the responsive grid. */
+.vision-mission {
+  color: var(--blue-dark);
+}
+.vision-mission h2 {
+  font-size: clamp(46px, 4.8vw, 70px);
+  line-height: 1.03;
+}
+.vision-mission h3 {
+  font-size: 38px;
+  line-height: 1.1;
+}
+.target-group {
+  background: var(--yellow);
+  color: var(--blue-dark);
+  border-radius: 8px;
+  padding: 35px;
+}
+.target-group .metric-grid,
+.target-group .metric-grid > article {
+  border-color: var(--blue);
+}
+.target-group .metric-grid strong {
+  font-size: clamp(49px, 5vw, 76px);
+  line-height: 1.1;
+  letter-spacing: -0.075em;
+}
+.partner-logo-row {
+  height: 72px;
+  min-height: 72px;
+  margin-bottom: 0;
+  gap: 22px;
+}
+.partner-logo-row img {
+  max-width: none;
+  max-height: none;
+  flex-shrink: 0;
+}
+.partner-logo-row img[src$='ze-gen.svg'] {
+  width: 159px;
+  height: 28px;
+}
+.partner-logo-row img[src$='kamim.svg'] {
+  width: 125px;
+  height: 62px;
+}
+
+.partner-logo-row img[src$='eweko.svg'] {
+  width: 129px;
+  height: 52px;
+}
+.credit-grid p {
+  padding: 25px 0;
+  margin: 0;
+  min-height: 120px;
+}

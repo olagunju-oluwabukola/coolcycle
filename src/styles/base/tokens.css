@@ -1,0 +1,16 @@
+:root {
+  --blue: #78aaff;
+  --blue-mid: #4f7fd4;
+  --blue-dark: #234b91;
+  --green: #22c46f;
+  --green-mid: #159957;
+  --green-dark: #075e3a;
+  --yellow: #fed440;
+  --purple: #c58ffe;
+  --paper: #f4f8fa;
+  --ink: #101d2d;
+  --muted: #526170;
+  --rule: #bfc9d4;
+  --gutter: clamp(24px, 7.4vw, 120px);
+  --font: Inter, Arial, sans-serif;
+}

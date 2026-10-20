@@ -1,0 +1,38 @@
+/* Subtle corners echo the supplied CoolCycle mark. */
+:root {
+  --radius-control: 4px;
+  --radius-surface: 8px;
+}
+button,
+input,
+textarea,
+select,
+.button,
+.header nav a,
+.status,
+.service-index,
+.detail-link,
+.skip,
+.title-box {
+  border-radius: var(--radius-control);
+}
+.hero-service-strip > a,
+.photo > img,
+.service-image,
+.process-card,
+.map-canvas,
+.message-dialog,
+.target-group,
+.regional-map {
+  border-radius: var(--radius-surface);
+}
+.hero-service-strip > a {
+  overflow: hidden;
+}
+.message-dialog::backdrop {
+  border-radius: 0;
+}
+
+.regional-map {
+  overflow: hidden;
+}

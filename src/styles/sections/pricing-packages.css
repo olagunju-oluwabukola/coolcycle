@@ -1,0 +1,67 @@
+/* Cold-storage package cards (inside the .pricing section). */
+.pricing.pricing-packages {
+  display: block;
+}
+.pricing-intro {
+  max-width: 760px;
+}
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 50px;
+}
+.package {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  border: 1px solid var(--green-dark);
+  border-radius: var(--radius-surface, 8px);
+  padding: 30px;
+}
+.pricing .package p {
+  margin: 0;
+  font-size: 15px;
+}
+.package-price strong {
+  display: block;
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+.package-price span {
+  font-size: 14px;
+}
+.package-includes h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+.package-includes ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+}
+.package-includes li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.pricing .package .package-best {
+  margin-top: auto;
+  border-top: 1px solid var(--green-dark);
+  padding-top: 16px;
+}
+.pricing .package-note {
+  margin: 30px 0 0;
+  max-width: 760px;
+  font-size: 14px;
+}
+@media (max-width: 950px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+}

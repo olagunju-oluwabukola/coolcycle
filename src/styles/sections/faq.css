@@ -1,0 +1,46 @@
+.faq-section {
+  display: grid;
+  grid-template-columns: 0.65fr 1.35fr;
+  gap: 60px;
+  border-top: 1px solid var(--blue-dark);
+  color: var(--blue-dark);
+  background: #e8edf2;
+}
+.faq-section aside {
+  position: sticky;
+  top: 130px;
+  align-self: start;
+}
+.faq-section aside .label {
+  margin-bottom: 28px;
+}
+.faq-section aside p {
+  margin: 30px 0;
+}
+.faq-section > div {
+  border-left: 1px solid var(--blue-dark);
+}
+.faq-section article {
+  padding: 32px 40px 45px;
+  border-bottom: 1px solid var(--blue-dark);
+}
+.faq-section article:first-child {
+  border-top: 1px solid var(--blue-dark);
+}
+.faq-section article > .label {
+  margin-bottom: 22px;
+}
+.faq-section article h3 {
+  font-size: 30px;
+  line-height: 1.15;
+}
+.faq-section article p {
+  margin-top: 25px;
+  font-size: 16px;
+}
+.faq-section article .fine {
+  font-size: 12px;
+}
+.faq-section article .text-link {
+  margin-top: 18px;
+}

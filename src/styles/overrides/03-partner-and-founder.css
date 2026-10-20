@@ -1,0 +1,53 @@
+/* Supplied partner artwork and Structure-inspired founder profile. */
+.partner-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 140px;
+  margin-bottom: 28px;
+}
+.partner-logo-row img {
+  display: block;
+  width: auto;
+  max-width: 220px;
+  max-height: 100px;
+  object-fit: contain;
+}
+.partner-logo-pair img {
+  max-width: calc(50% - 11px);
+  max-height: 100px;
+}
+.credit-grid h3 {
+  min-height: 70px;
+}
+.team-list article {
+  grid-template-columns: 70px 1fr;
+}
+.team-list article.founder-profile {
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+  align-items: center;
+  padding: 45px 0 65px;
+}
+.founder-profile .photo > img {
+  aspect-ratio: 4/5;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+.founder-copy h3 {
+  font-size: clamp(38px, 4.5vw, 65px);
+  max-width: 620px;
+  margin-top: 28px;
+}
+.founder-copy p {
+  max-width: 500px;
+  line-height: 1.5;
+}
+.founder-index {
+  display: inline-block;
+  padding: 7px 11px;
+  background: var(--green);
+  color: var(--ink);
+  border-radius: var(--radius-control);
+}

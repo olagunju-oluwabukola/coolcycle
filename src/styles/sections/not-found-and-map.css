@@ -1,0 +1,13 @@
+.not-found {
+  min-height: 75vh;
+  padding-top: 180px;
+}
+.not-found h1 {
+  margin-bottom: 35px;
+}
+.leaflet-control-container {
+  font-family: var(--font);
+}
+.leaflet-container a {
+  color: var(--blue-dark);
+}

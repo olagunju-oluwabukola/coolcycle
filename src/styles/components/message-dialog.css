@@ -1,0 +1,54 @@
+.message-dialog {
+  border: 0;
+  max-width: 650px;
+  width: calc(100% - 40px);
+  padding: 0;
+  color: var(--ink);
+  background: var(--paper);
+  max-height: calc(100svh - 40px);
+  overflow: auto;
+}
+.message-dialog::backdrop {
+  background: #07101b99;
+}
+.message-dialog > div {
+  padding: 35px;
+}
+.dialog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.dialog-top button {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: none;
+  border: 1px solid var(--rule);
+}
+.message-dialog h2 {
+  font-size: 38px;
+  max-width: 520px;
+}
+.message-dialog p {
+  font-size: 14px;
+  margin: 25px 0;
+}
+.message-dialog label {
+  margin-top: 25px;
+}
+.message-dialog .actions {
+  margin-top: 25px;
+  gap: 12px;
+}
+.message-dialog .button {
+  font-size: 12px;
+  padding: 13px 15px;
+  gap: 15px;
+}
+.message-dialog .fine {
+  font-size: 12px;
+  margin-bottom: 0;
+}
